@@ -120,6 +120,7 @@ class GameStateManager:
         return self.currentState
 
     def setState(self, newState):
+        print("change of state")
         self.currentState = newState
     
 
