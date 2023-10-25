@@ -1,6 +1,7 @@
 import pygame
 from sys import exit
 import button
+import questionHandler
 
 # CONSTANTS
 SCREEN_WIDTH = 800
@@ -26,6 +27,9 @@ class Game:
         self.gameStateManager = GameStateManager('menu')
         self.menu = Menu(self.screen, self.gameStateManager)
         self.level = Level(self.screen, self.gameStateManager)
+        
+        self.quesHandKMath = questionHandler.QuestionHandler("K", "Math")
+        self.quesHandKMath.getRandomQuestion()
 
         self.states = {
             'menu': self.menu,
