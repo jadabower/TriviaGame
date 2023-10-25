@@ -63,7 +63,7 @@ class Level:
 
 
     def run(self):
-        screen =pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
+        # screen =pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
         self.display.fill(WHITE)
 
         # draw grid for debugging and asset placement
@@ -79,7 +79,7 @@ class Level:
         text_box = pygame.Rect(100, 50, 600, 150)
 
         pygame.draw.rect(self.display, TEAL, text_box)
-        screen.blit(text_surface, (text_box.x + 10, text_box.y + 10))
+        # screen.blit(text_surface, (text_box.x + 10, text_box.y + 10))
         
 
         if self.button1.draw(self.display): # We need to still go into the button and see if we can change the text, play button works for now. Also need to figure randomizing the answers
