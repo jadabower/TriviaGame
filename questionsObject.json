@@ -7,25 +7,28 @@
           "options": {
             "A": 3,
             "B": 4,
-            "C": 5
+            "C": 5,
+            "D": 2
           },
           "correctAnswer": "B"
         },
         {
-          "question": "How many fingers do you have on one hand?",
+          "question": "How many fingers are on one hand?",
           "options": {
             "A": 3,
             "B": 5,
-            "C": 10
+            "C": 10,
+            "D": 4
           },
           "correctAnswer": "B"
         },
         {
-          "question": "What comes after 4 in counting?",
+          "question": "What comes after 4 when you're counting?",
           "options": {
             "A": 5,
             "B": 6,
-            "C": 7
+            "C": 7,
+            "D": 3
           },
           "correctAnswer": "A"
         },
@@ -34,16 +37,18 @@
           "options": {
             "A": 2,
             "B": 3,
-            "C": 4
+            "C": 1,
+            "D": 4
           },
-          "correctAnswer": "C"
+          "correctAnswer": "D"
         },
         {
           "question": "How many legs does a cat have?",
           "options": {
             "A": 2,
             "B": 4,
-            "C": 6
+            "C": 6,
+            "D": 24
           },
           "correctAnswer": "B"
         },
@@ -52,7 +57,8 @@
           "options": {
             "A": "Circle",
             "B": "Triangle",
-            "C": "Square"
+            "C": "Square",
+            "D": "Heart"
           },
           "correctAnswer": "C"
         },
@@ -61,7 +67,8 @@
           "options": {
             "A": 1,
             "B": 2,
-            "C": 3
+            "C": 3,
+            "D": 8
           },
           "correctAnswer": "B"
         },
@@ -70,7 +77,8 @@
           "options": {
             "A": 1,
             "B": 2,
-            "C": 3
+            "C": 3,
+            "D": 8
           },
           "correctAnswer": "B"
         },
@@ -79,7 +87,8 @@
           "options": {
             "A": 3,
             "B": 5,
-            "C": 2
+            "C": 2,
+            "D": 1
           },
           "correctAnswer": "C"
         },
@@ -87,17 +96,19 @@
           "question": "What is the color of the sun?",
           "options": {
             "A": "Blue",
-            "B": "Yellow",
-            "C": "Green"
+            "B": "Purple",
+            "C": "Green",
+            "D": "Yellow"
           },
-          "correctAnswer": "B"
+          "correctAnswer": "D"
         },
         {
           "question": "How many wheels does a bike have?",
           "options": {
             "A": 0,
             "B": 2,
-            "C": 4
+            "C": 4,
+            "D": 1
           },
           "correctAnswer": "B"
         },
@@ -106,7 +117,8 @@
           "options": {
             "A": 3,
             "B": 4,
-            "C": 5
+            "C": 5,
+            "D": 17
           },
           "correctAnswer": "A"
         },
@@ -115,7 +127,8 @@
           "options": {
             "A": 7,
             "B": 8,
-            "C": 9
+            "C": 9,
+            "D": 4
           },
           "correctAnswer": "B"
         },
@@ -124,7 +137,8 @@
           "options": {
             "A": 5,
             "B": 6,
-            "C": 7
+            "C": 7,
+            "D": 2
           },
           "correctAnswer": "C"
         }
@@ -137,7 +151,8 @@
           "options": {
             "A": "Yellow",
             "B": "Blue",
-            "C": "Green"
+            "C": "Green",
+            "D": "Purple"
           },
           "correctAnswer": "A"
         },
@@ -146,7 +161,8 @@
           "options": {
             "A": "Dog",
             "B": "Cow",
-            "C": "Cat"
+            "C": "Cat",
+            "D": "Pig"
           },
           "correctAnswer": "B"
         },
@@ -155,7 +171,8 @@
           "options": {
             "A": "Microscope",
             "B": "Telescope",
-            "C": "Magnifying glass"
+            "C": "Magnifying glass",
+            "D": "Barometer"
           },
           "correctAnswer": "B"
         },
@@ -164,7 +181,8 @@
           "options": {
             "A": "Carrot",
             "B": "Apple",
-            "C": "Broccoli"
+            "C": "Broccoli",
+            "D": "Peas"
           },
           "correctAnswer": "B"
         },
@@ -173,16 +191,18 @@
           "options": {
             "A": "Hot",
             "B": "Wet",
-            "C": "Tall"
+            "C": "Tall",
+            "D": "Cool"
           },
           "correctAnswer": "A"
         },
         {
           "question": "How many legs does a spider have?",
           "options": {
-            "A": "6",
-            "B": "8",
-            "C": "4"
+            "A": 6,
+            "B": 8,
+            "C": 4,
+            "D": 2
           },
           "correctAnswer": "B"
         },
@@ -191,7 +211,8 @@
           "options": {
             "A": "Blue",
             "B": "Red",
-            "C": "Green"
+            "C": "Green",
+            "D": "Purple"
           },
           "correctAnswer": "C"
         },
@@ -200,34 +221,38 @@
           "options": {
             "A": "Candy",
             "B": "Rain",
-            "C": "Pencils"
+            "C": "Pencils",
+            "D": "Meatballs"
           },
           "correctAnswer": "B"
         },
         {
           "question": "Which planet is known as the Red Planet?",
           "options": {
-            "A": "Mars",
+            "A": "Mercury",
             "B": "Venus",
-            "C": "Jupiter"
+            "C": "Jupiter",
+            "D": "Mars"
           },
-          "correctAnswer": "A"
+          "correctAnswer": "D"
         },
         {
           "question": "What do you use to write and draw?",
           "options": {
             "A": "Shoe",
             "B": "Book",
-            "C": "Crayon"
+            "C": "Crayon",
+            "D": "Dog"
           },
           "correctAnswer": "C"
         },
         {
-          "question": "What is the largest mammal on Earth?",
+          "question": "What is the biggest animal on Earth?",
           "options": {
             "A": "Elephant",
             "B": "Blue Whale",
-            "C": "Giraffe"
+            "C": "Giraffe",
+            "D": "Snail"
           },
           "correctAnswer": "B"
         },
@@ -235,17 +260,19 @@
           "question": "What do plants need to grow?",
           "options": {
             "A": "Ice cream",
-            "B": "Sunlight",
-            "C": "Pizza"
+            "B": "French Fries",
+            "C": "Pizza",
+            "D": "Sunlight"
           },
-          "correctAnswer": "B"
+          "correctAnswer": "D"
         },
         {
           "question": "What do you use to see things up close?",
           "options": {
             "A": "Toothbrush",
             "B": "Microscope",
-            "C": "Telescope"
+            "C": "Telescope",
+            "D": "Barometer"
           },
           "correctAnswer": "B"
         },
@@ -254,25 +281,28 @@
           "options": {
             "A": "Duck",
             "B": "Horse",
-            "C": "Cat"
+            "C": "Cat",
+            "D": "Pig"
           },
           "correctAnswer": "C"
         },
         {
-          "question": "What is the shape of a pizza?",
+          "question": "What is the shape of a full pizza?",
           "options": {
             "A": "Triangle",
-            "B": "Circle",
-            "C": "Square"
+            "B": "Rhombus",
+            "C": "Trapeziod",
+            "D": "Circle"
           },
-          "correctAnswer": "B"
+          "correctAnswer": "D"
         },
         {
           "question": "What do you use to measure time?",
           "options": {
             "A": "Clock",
             "B": "Banana",
-            "C": "Shoe"
+            "C": "Shoe",
+            "D": "Spoon"
           },
           "correctAnswer": "A"
         },
@@ -281,7 +311,8 @@
           "options": {
             "A": "Purple",
             "B": "Yellow",
-            "C": "Blue"
+            "C": "Blue",
+            "D": "Red"
           },
           "correctAnswer": "C"
         },
@@ -290,7 +321,8 @@
           "options": {
             "A": "Carrot",
             "B": "Apple",
-            "C": "Goldfish"
+            "C": "Goldfish",
+            "D": "Blue jay"
           },
           "correctAnswer": "C"
         },
@@ -299,25 +331,28 @@
           "options": {
             "A": "Rock",
             "B": "Scissors",
-            "C": "Lollipop"
+            "C": "Lollipop",
+            "D": "Glue"
           },
           "correctAnswer": "B"
         },
         {
           "question": "What is the opposite of big?",
           "options": {
-            "A": "Small",
+            "A": "Tall",
             "B": "Fast",
-            "C": "Heavy"
+            "C": "Heavy",
+            "D": "Small"
           },
-          "correctAnswer": "A"
+          "correctAnswer": "D"
         },
         {
           "question": "What is the largest planet in our solar system?",
           "options": {
             "A": "Earth",
             "B": "Jupiter",
-            "C": "Mercury"
+            "C": "Mercury",
+            "D": "Saturn"
           },
           "correctAnswer": "B"
         },
@@ -326,7 +361,8 @@
           "options": {
             "A": "Banana",
             "B": "Drum",
-            "C": "Pillow"
+            "C": "Pillow",
+            "D": "Baseball"
           },
           "correctAnswer": "B"
         },
@@ -335,7 +371,8 @@
           "options": {
             "A": "Flashlight",
             "B": "Sunglasses",
-            "C": "Umbrella"
+            "C": "Umbrella",
+            "D": "Telescope"
           },
           "correctAnswer": "A"
         },
@@ -344,7 +381,8 @@
           "options": {
             "A": "Lion",
             "B": "Duck",
-            "C": "Bear"
+            "C": "Bear",
+            "D": "Dog"
           },
           "correctAnswer": "B"
         },
@@ -353,7 +391,8 @@
           "options": {
             "A": "Blue",
             "B": "Red",
-            "C": "Yellow"
+            "C": "Yellow",
+            "D": "Purple"
           },
           "correctAnswer": "C"
         },
@@ -362,16 +401,18 @@
           "options": {
             "A": "Square",
             "B": "Triangle",
-            "C": "Circle"
+            "C": "Rectangle",
+            "D": "Circle"
           },
-          "correctAnswer": "C"
+          "correctAnswer": "D"
         },
         {
           "question": "What do you use to write on a blackboard?",
           "options": {
             "A": "Chalk",
             "B": "Crayon",
-            "C": "Eraser"
+            "C": "Eraser",
+            "D": "Finger"
           },
           "correctAnswer": "A"
         }
@@ -382,54 +423,60 @@
         {
           "question": "What did the ancient Egyptians build that looks like a triangle and is very tall?",
           "options": {
-            "A": "Pyramids",
-            "B": "Castles",
-            "C": "Tents"
+            "A": "Castles",
+            "B": "Pyramids",
+            "C": "Tents",
+            "D": "Statues"
           },
-          "correctAnswer": "A"
+          "correctAnswer": "B"
         },
         {
           "question": "Who sailed across the ocean and found a new land in 1492?",
           "options": {
             "A": "Christopher Columbus",
             "B": "Santa Claus",
-            "C": "Superman"
+            "C": "Superman",
+            "D": "Alexander the Great"
           },
           "correctAnswer": "A"
         },
         {
           "question": "What long wall was built in China to keep bad guys away?",
           "options": {
-            "A": "The Great Wall of China",
+            "A": "The Grand Canyon",
             "B": "The Berlin Wall",
-            "C": "The Rainbow Wall"
+            "C": "The Rainbow Wall",
+            "D": "The Great Wall of China"
           },
-          "correctAnswer": "A"
+          "correctAnswer": "D"
         },
         {
           "question": "Who was the first person to walk on the moon?",
           "options": {
-            "A": "Neil Armstrong",
-            "B": "John F. Kennedy",
-            "C": "Buzz Lightyear"
+            "A": "John F. Kennedy",
+            "B": "Neil Armstrong",
+            "C": "Buzz Lightyear",
+            "D": "Yuri Gagarin"
           },
-          "correctAnswer": "A"
+          "correctAnswer": "B"
         },
         {
           "question": "Who had a dream of everyone being friends and not fighting?",
           "options": {
             "A": "Martin Luther King Jr.",
-            "B": "Abraham Lincoln",
-            "C": "George Washington"
+            "B": "Ronald Reagan",
+            "C": "George Washington",
+            "D": "Benjamin Franklin"
           },
           "correctAnswer": "A"
         },
         {
           "question": "What's the name of a big, tall dinosaur with a long neck?",
           "options": {
-            "A": "Tyrannosaurus Rex",
+            "A": "T. Rex",
             "B": "Stegosaurus",
-            "C": "Brachiosaurus"
+            "C": "Brachiosaurus",
+            "D": "Triceratops"
           },
           "correctAnswer": "C"
         }
@@ -440,18 +487,20 @@
         {
           "question": "What letter comes after 'A'?",
           "options": {
-            "A": "B",
+            "A": "E",
             "B": "C",
-            "C": "D"
+            "C": "D",
+            "D": "B"
           },
-          "correctAnswer": "A"
+          "correctAnswer": "D"
         },
         {
           "question": "Which word starts with the letter 'P'?",
           "options": {
             "A": "Banana",
             "B": "Apple",
-            "C": "Puppy"
+            "C": "Puppy",
+            "D": "Elephant"
           },
           "correctAnswer": "C"
         },
@@ -460,7 +509,8 @@
           "options": {
             "A": "Red",
             "B": "Green",
-            "C": "Yellow"
+            "C": "Yellow",
+            "D": "Purple"
           },
           "correctAnswer": "C"
         },
@@ -469,7 +519,8 @@
           "options": {
             "A": "Small",
             "B": "Tall",
-            "C": "Fast"
+            "C": "Fast",
+            "D": "Loud"
           },
           "correctAnswer": "A"
         },
@@ -478,7 +529,8 @@
           "options": {
             "A": "C",
             "B": "A",
-            "C": "T"
+            "C": "T",
+            "D": "M"
           },
           "correctAnswer": "A"
         },
@@ -486,17 +538,19 @@
           "question": "Which animal says 'moo'?",
           "options": {
             "A": "Dog",
-            "B": "Cat",
-            "C": "Cow"
+            "B": "Cow",
+            "C": "Cat",
+            "D": "Horse"
           },
-          "correctAnswer": "C"
+          "correctAnswer": "B"
         },
         {
           "question": "Which letter makes the 'mmm' sound, like in 'milk'?",
           "options": {
             "A": "L",
             "B": "M",
-            "C": "S"
+            "C": "S",
+            "D": "P"
           },
           "correctAnswer": "B"
         },
@@ -504,17 +558,19 @@
           "question": "What is the opposite of 'happy'?",
           "options": {
             "A": "Tired",
-            "B": "Sad",
-            "C": "Hungry"
+            "B": "Excited",
+            "C": "Hungry",
+            "D": "Sad"
           },
-          "correctAnswer": "B"
+          "correctAnswer": "D"
         },
         {
           "question": "What do you use to tell time and see the numbers on a clock?",
           "options": {
             "A": "Shoelace",
             "B": "Toothpaste",
-            "C": "Clock hands"
+            "C": "Clock hands",
+            "D": "Sunglasses"
           },
           "correctAnswer": "C"
         }
@@ -529,16 +585,18 @@
           "options": {
             "A": 3,
             "B": 4,
-            "C": 5
+            "C": 6,
+            "D": 5
           },
-          "correctAnswer": "C"
+          "correctAnswer": "D"
         },
         {
           "question": "Sally has 7 marbles, and Tim has 4 marbles. How many marbles do they have together?",
           "options": {
             "A": 9,
             "B": 10,
-            "C": 11
+            "C": 11,
+            "D": 12
           },
           "correctAnswer": "C"
         },
@@ -547,16 +605,18 @@
           "options": {
             "A": 7,
             "B": 8,
-            "C": 9
+            "C": 10,
+            "D": 9
           },
-          "correctAnswer": "C"
+          "correctAnswer": "D"
         },
         {
           "question": "There are 12 flowers in the garden. If 5 of them are red and the rest are blue, how many blue flowers are there?",
           "options": {
             "A": 5,
             "B": 6,
-            "C": 7
+            "C": 7,
+            "D": 8
           },
           "correctAnswer": "C"
         },
@@ -565,7 +625,8 @@
           "options": {
             "A": 3,
             "B": 5,
-            "C": 7
+            "C": 7,
+            "D": 9
           },
           "correctAnswer": "B"
         },
@@ -574,7 +635,8 @@
           "options": {
             "A": 7,
             "B": 8,
-            "C": 9
+            "C": 9,
+            "D": 10
           },
           "correctAnswer": "A"
         },
@@ -583,7 +645,8 @@
           "options": {
             "A": 9,
             "B": 10,
-            "C": 11
+            "C": 11,
+            "D": 12
           },
           "correctAnswer": "C"
         },
@@ -592,16 +655,18 @@
           "options": {
             "A": 8,
             "B": 10,
-            "C": 12
+            "C": 16,
+            "D": 12
           },
-          "correctAnswer": "C"
+          "correctAnswer": "D"
         },
         {
           "question": "If you have 2 apples and 3 pears, how many fruits do you have in total?",
           "options": {
             "A": 4,
             "B": 5,
-            "C": 6
+            "C": 6,
+            "D": 7
           },
           "correctAnswer": "B"
         },
@@ -610,7 +675,8 @@
           "options": {
             "A": 17,
             "B": 7,
-            "C": 3
+            "C": 3,
+            "D": 10
           },
           "correctAnswer": "C"
         }
@@ -623,7 +689,8 @@
           "options": {
             "A": "Water and sunlight",
             "B": "Chocolate and toys",
-            "C": "Music and hugs"
+            "C": "Music and hugs",
+            "D": "Air and soil"
           },
           "correctAnswer": "A"
         },
@@ -631,17 +698,19 @@
           "question": "Which season is the coldest?",
           "options": {
             "A": "Summer",
-            "B": "Winter",
-            "C": "Spring"
+            "B": "Autumn",
+            "C": "Spring",
+            "D": "Winter"
           },
-          "correctAnswer": "B"
+          "correctAnswer": "D"
         },
         {
           "question": "What is the name of our planet?",
           "options": {
             "A": "Mars",
             "B": "Earth",
-            "C": "Moon"
+            "C": "Moon",
+            "D": "Venus"
           },
           "correctAnswer": "B"
         },
@@ -650,7 +719,8 @@
           "options": {
             "A": "Carrot",
             "B": "Banana",
-            "C": "Potato"
+            "C": "Potato",
+            "D": "Cucumber"
           },
           "correctAnswer": "B"
         },
@@ -658,17 +728,19 @@
           "question": "Which of these is a bird that can't fly?",
           "options": {
             "A": "Eagle",
-            "B": "Penguin",
-            "C": "Sparrow"
+            "B": "Hawk",
+            "C": "Sparrow",
+            "D": "Penguin"
           },
-          "correctAnswer": "B"
+          "correctAnswer": "D"
         },
         {
           "question": "What is the source of light in the daytime?",
           "options": {
             "A": "Moon",
             "B": "Stars",
-            "C": "Sun"
+            "C": "Sun",
+            "D": "Fire"
           },
           "correctAnswer": "C"
         },
@@ -677,7 +749,8 @@
           "options": {
             "A": "Hibernation",
             "B": "Metamorphosis",
-            "C": "Photosynthesis"
+            "C": "Photosynthesis",
+            "D": "Evolution"
           },
           "correctAnswer": "B"
         },
@@ -686,7 +759,8 @@
           "options": {
             "A": "Turtle",
             "B": "Frog",
-            "C": "Snake"
+            "C": "Snake",
+            "D": "Lizard"
           },
           "correctAnswer": "C"
         },
@@ -695,7 +769,8 @@
           "options": {
             "A": "Bread",
             "B": "Water",
-            "C": "Rock"
+            "C": "Rock",
+            "D": "Wood"
           },
           "correctAnswer": "B"
         },
@@ -704,7 +779,8 @@
           "options": {
             "A": "Fish",
             "B": "Elephant",
-            "C": "Frog"
+            "C": "Frog",
+            "D": "Giraffe"
           },
           "correctAnswer": "C"
         }
@@ -717,72 +793,80 @@
           "options": {
             "A": "George Washington",
             "B": "Thomas Jefferson",
-            "C": "Abraham Lincoln"
+            "C": "Abraham Lincoln",
+            "D": "Benjamin Franklin"
           },
-          "correct_answer": "A"
+          "correctAnswer": "A"
         },
         {
           "question": "What did Christopher Columbus discover in 1492?",
           "options": {
             "A": "The Moon",
-            "B": "America",
-            "C": "Africa"
+            "B": "Asia",
+            "C": "Africa",
+            "D": "America"
           },
-          "correct_answer": "B"
+          "correctAnswer": "D"
         },
         {
           "question": "Who is known for inventing the light bulb?",
           "options": {
             "A": "Thomas Edison",
-            "B": "Billy Nye",
-            "C": "Albert Einstein"
+            "B": "Bill Nye",
+            "C": "Albert Einstein",
+            "D": "Isaac Newton"
           },
-          "correct_answer": "A"
+          "correctAnswer": "A"
         },
         {
           "question": "What ship did the Pilgrims use to travel to America in 1620?",
           "options": {
-            "A": "Mayflower",
+            "A": "Nina",
             "B": "Santa Maria",
-            "C": "Pinta"
+            "C": "Pinta",
+            "D": "Mayflower"
           },
-          "correct_answer": "A"
+          "correctAnswer": "D"
         },
         {
           "question": "Who wrote the Declaration of Independence for the United States?",
           "options": {
             "A": "George Washington",
             "B": "Thomas Jefferson",
-            "C": "Benjamin Franklin"
+            "C": "Benjamin Franklin",
+            "D": "John Adams"
           },
-          "correct_answer": "B"
+          "correctAnswer": "B"
         },
         {
           "question": "Who is famous for helping enslaved people escape to freedom on the Underground Railroad?",
           "options": {
             "A": "Harriet Tubman",
-            "B": "Thomas Jefferson",
-            "C": "Abraham Lincoln"
+            "B": "Abraham Lincoln",
+            "C": "Thomas Jefferson",
+            "D": "Frederick Douglass"
           },
-          "correct_answer": "A"
+          "correctAnswer": "C"
         },
         {
           "question": "What event is celebrated on the 4th of July in the United States?",
           "options": {
             "A": "Halloween",
             "B": "Independence Day",
-            "C": "Thanksgiving"
+            "C": "Thanksgiving",
+            "D": "Labor Day"
           },
-          "correct_answer": "B"
+          "correctAnswer": "B"
         },
         {
           "question": "Who is known for his 'I Have a Dream' speech and his role in the civil rights movement?",
           "options": {
-            "A": "Martin Luther King Jr.",
+            "A": "Elvis Presley",
             "B": "John F. Kennedy",
-            "C": "Malcolm X"
+            "C": "Martin Luther King Jr.",
+            "D": "Nelson Mandela"
           },
-          "correct_answer": "A"
+          "correctAnswer": "C"
         }
       ]
     },
@@ -791,27 +875,30 @@
         {
           "question": "Which word is a noun (person, place, or thing)?",
           "options": {
-            "A": "Jump",
-            "B": "Car",
-            "C": "Quickly"
+            "A": "Car",
+            "B": "Jump",
+            "C": "Quickly",
+            "D": "Red"
           },
-          "correctAnswer": "B"
+          "correctAnswer": "A"
         },
         {
           "question": "What is a verb (action word)?",
           "options": {
-            "A": "Apple",
-            "B": "Run",
-            "C": "Blue"
+            "A": "Run",
+            "B": "Apple",
+            "C": "Blue",
+            "D": "Slimy"
           },
-          "correctAnswer": "B"
+          "correctAnswer": "A"
         },
         {
           "question": "Which word is an adjective (describes how something or someone looks, feels, or acts)?",
           "options": {
             "A": "Dog",
             "B": "Happy",
-            "C": "Jump"
+            "C": "Jump",
+            "D": "House"
           },
           "correctAnswer": "B"
         },
@@ -820,7 +907,8 @@
           "options": {
             "A": "Tree",
             "B": "Under",
-            "C": "Sing"
+            "C": "Sing",
+            "D": "Green"
           },
           "correctAnswer": "B"
         },
@@ -828,17 +916,19 @@
           "question": "Find the word that shows how something is done.",
           "options": {
             "A": "Jump",
-            "B": "Quickly",
-            "C": "Cat"
+            "B": "Cat",
+            "C": "Quickly",
+            "D": "Yellow"
           },
-          "correctAnswer": "B"
+          "correctAnswer": "C"
         },
         {
           "question": "Which word joins two sentences or ideas together?",
           "options": {
-            "A": "Like",
+            "A": "Above",
             "B": "I",
-            "C": "And"
+            "C": "She",
+            "D": "And"
           },
           "correctAnswer": "C"
         },
@@ -846,19 +936,21 @@
           "question": "Pick the word that is plural (there is more than one of it).",
           "options": {
             "A": "Ball",
-            "B": "Cats",
-            "C": "Jump"
+            "B": "Cat",
+            "C": "Jump",
+            "D": "Hats"
           },
-          "correctAnswer": "B"
+          "correctAnswer": "D"
         },
         {
           "question": "Find the word that shows surprise or excitement.",
           "options": {
             "A": "That's",
-            "B": "Wow",
-            "C": "Amazing"
+            "B": "Not",
+            "C": "Common",
+            "D": "Amazing"
           },
-          "correctAnswer": "B"
+          "correctAnswer": "D"
         }
       ]
     }
