@@ -954,5 +954,383 @@
         }
       ]
     }
+  },
+  "2": {
+    "Math": {
+      "questions": [
+        {
+          "question": "What is 3 + 4?",
+          "options": {
+            "A": 7,
+            "B": 6,
+            "C": 5,
+            "D": 8
+          },
+          "correct_answer": "A"
+        },
+        {
+          "question": "If you have 5 apples and you eat 2, how many apples do you have left?",
+          "options": {
+            "A": 3,
+            "B": 7,
+            "C": 5,
+            "D": 4
+          },
+          "correct_answer": "A"
+        },
+        {
+          "question": "What comes after 9 in the counting sequence?",
+          "options": {
+            "A": 8,
+            "B": 10,
+            "C": 7,
+            "D": 11
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question": "If you have 2 dimes and 3 nickels, how much money do you have in total?",
+          "options": {
+            "A": "5 cents",
+            "B": "35 cents",
+            "C": "25 cents",
+            "D": "15 cents"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question": "Which shape has three sides and three corners?",
+          "options": {
+            "A": "Circle",
+            "B": "Square",
+            "C": "Triangle",
+            "D": "Rectangle"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question": "If you count by twos starting from 2, what is the next number in the sequence?",
+          "options": {
+            "A": 3,
+            "B": 5,
+            "C": 4,
+            "D": 6
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question": "What is 8 minus 3?",
+          "options": {
+            "A": 11,
+            "B": 4,
+            "C": 5,
+            "D": 8
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question": "Which number is even?",
+          "options": {
+            "A": 3,
+            "B": 5,
+            "C": 9,
+            "D": 8
+          },
+          "correct_answer": "D"
+        },
+        {
+          "question": "If you have 7 marbles and you give away 2, how many marbles do you have left?",
+          "options": {
+            "A": 2,
+            "B": 7,
+            "C": 9,
+            "D": 5
+          },
+          "correct_answer": "D"
+        }
+      ]
+    },
+    "Science": {
+      "questions": [
+        {
+          "question": "What is the smallest planet in our solar system?",
+          "options": {
+            "A": "Mercury",
+            "B": "Venus",
+            "C": "Earth",
+            "D": "Mars"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "question": "What is the process by which water changes from a liquid to a gas?",
+          "options": {
+            "A": "Melting",
+            "B": "Evaporation",
+            "C": "Freezing",
+            "D": "Condensation"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question": "Which of these is a mammal that can fly?",
+          "options": {
+            "A": "Fish",
+            "B": "Bird",
+            "C": "Bat",
+            "D": "Snake"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question": "What gives plants their green color?",
+          "options": {
+            "A": "Water",
+            "B": "Sunlight",
+            "C": "Soil",
+            "D": "Chlorophyll"
+          },
+          "correct_answer": "D"
+        },
+        {
+          "question": "What is the force that pulls objects towards the Earth?",
+          "options": {
+            "A": "Gravity",
+            "B": "Magnetism",
+            "C": "Friction",
+            "D": "Air"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "question": "What is the closest star to Earth?",
+          "options": {
+            "A": "Moon",
+            "B": "Sun",
+            "C": "Proxima Centauri",
+            "D": "Mars"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question": "What is the process of a caterpillar changing into a butterfly called?",
+          "options": {
+            "A": "Hibernation",
+            "B": "Migration",
+            "C": "Metamorphosis",
+            "D": "Camouflage"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question": "What is the study of stars, planets, and the universe called?",
+          "options": {
+            "A": "Geology",
+            "B": "Biology",
+            "C": "Chemistry",
+            "D": "Astronomy"
+          },
+          "correct_answer": "D"
+        },
+        {
+          "question": "What is the source of energy for most living things on Earth?",
+          "options": {
+            "A": "Sunlight",
+            "B": "Water",
+            "C": "Air",
+            "D": "Soil"
+          },
+          "correct_answer": "A"
+        }
+      ]
+    },
+    "History": {
+      "questions": [
+        {
+          "question": "Who was the 16th President of the United States?",
+          "options": {
+            "A": "Abraham Lincoln",
+            "B": "Thomas Jefferson",
+            "C": "George Washington",
+            "D": "Benjamin Franklin"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "question": "Which famous woman helped enslaved people escape to freedom on the Underground Railroad?",
+          "options": {
+            "A": "Harriet Tubman",
+            "B": "Amelia Earhart",
+            "C": "Susan B. Anthony",
+            "D": "Rosa Parks"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "question": "What did Christopher Columbus discover in 1492?",
+          "options": {
+            "A": "The Moon",
+            "B": "The New World",
+            "C": "Australia",
+            "D": "Atlantis"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question": "Who wrote the famous speech, 'I Have a Dream'?",
+          "options": {
+            "A": "Thomas Jefferson",
+            "B": "Martin Luther King Jr.",
+            "C": "George Washington",
+            "D": "Abraham Lincoln"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question": "What did the ancient Egyptians use to write on?",
+          "options": {
+            "A": "Paper",
+            "B": "Papyrus",
+            "C": "Stone tablets",
+            "D": "Animal skins"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question": "Which war was fought between the North and the South in the United States during the 1860s?",
+          "options": {
+            "A": "World War I",
+            "B": "The Revolutionary War",
+            "C": "The Civil War",
+            "D": "The Vietnam War"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question": "Who was the first person to walk on the moon?",
+          "options": {
+            "A": "Buzz Aldrin",
+            "B": "John F. Kennedy",
+            "C": "Neil Armstrong",
+            "D": "Sally Ride"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question": "What is the famous ancient structure in Egypt with a lion's body and a human head?",
+          "options": {
+            "A": "The Eiffel Tower",
+            "B": "The Great Wall of China",
+            "C": "The Sphinx",
+            "D": "The Leaning Tower of Pisa"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question": "Who is known for inventing the light bulb?",
+          "options": {
+            "A": "Isaac Newton",
+            "B": "Alexander Graham Bell",
+            "C": "Benjamin Franklin",
+            "D": "Thomas Edison"
+          },
+          "correct_answer": "D"
+        },
+        {
+          "question": "Which leader of India played a key role in gaining India's independence from British rule?",
+          "options": {
+            "A": "Queen Elizabeth II",
+            "B": "Nelson Mandela",
+            "C": "Winston Churchill",
+            "D": "Mahatma Gandhi"
+          },
+          "correct_answer": "D"
+        }
+      ]
+    },
+    "ELA": {
+      "questions": [
+        {
+          "question": "What is a noun?",
+          "options": {
+            "A": "A person, place, or thing",
+            "B": "A delicious ice cream cone",
+            "C": "A fast-running cheetah",
+            "D": "A shiny spaceship"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "Which word is a verb?",
+          "options": {
+            "A": "Blue",
+            "B": "Jumped",
+            "C": "Tree",
+            "D": "Happy"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "Select the pronoun in the sentence: She loves to read books.",
+          "options": {
+            "A": "Loves",
+            "B": "She",
+            "C": "Books",
+            "D": "Read"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "Which of these is an adjective?",
+          "options": {
+            "A": "Pizza",
+            "B": "Running",
+            "C": "Quickly",
+            "D": "Happy"
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "question": "Which word is a conjunction?",
+          "options": {
+            "A": "And",
+            "B": "Apple",
+            "C": "Bicycle",
+            "D": "Jump"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "Which sentence is a question?",
+          "options": {
+            "A": "The sun is shining.",
+            "B": "She plays guitar.",
+            "C": "Do you like ice cream?",
+            "D": "The cat sleeps."
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "Identify the adverb in the sentence: He ran quickly.",
+          "options": {
+            "A": "He",
+            "B": "Ran",
+            "C": "Quickly",
+            "D": "The"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "Which word is a preposition?",
+          "options": {
+            "A": "Swimming",
+            "B": "Purple",
+            "C": "Jumped",
+            "D": "Between"
+          },
+          "correctAnswer": "D"
+        }
+      ]
+    }
   }
 }
