@@ -93,12 +93,12 @@
           "correctAnswer": "C"
         },
         {
-          "question": "What is the color of the sun?",
+          "question": "3 - 1",
           "options": {
-            "A": "Blue",
-            "B": "Purple",
-            "C": "Green",
-            "D": "Yellow"
+            "A": "1",
+            "B": "3",
+            "C": "4",
+            "D": "2"
           },
           "correctAnswer": "D"
         },
@@ -431,12 +431,12 @@
           "correctAnswer": "B"
         },
         {
-          "question": "Who sailed across the ocean and found a new land in 1492?",
+          "question": "Who sailed across the ocean and found America in 1492?",
           "options": {
             "A": "Christopher Columbus",
             "B": "Santa Claus",
             "C": "Superman",
-            "D": "Alexander the Great"
+            "D": "Spongebob"
           },
           "correctAnswer": "A"
         },
@@ -651,12 +651,12 @@
           "correctAnswer": "C"
         },
         {
-          "question": "What is 4 x 3?",
+          "question": "12 + _ = 14",
           "options": {
-            "A": 8,
+            "A": 1,
             "B": 10,
-            "C": 16,
-            "D": 12
+            "C": 3,
+            "D": 2
           },
           "correctAnswer": "D"
         },
@@ -959,24 +959,24 @@
     "Math": {
       "questions": [
         {
-          "question": "What is 3 + 4?",
+          "question": "What is 4 + 7?",
           "options": {
-            "A": 7,
-            "B": 6,
-            "C": 5,
-            "D": 8
-          },
-          "correct_answer": "A"
-        },
-        {
-          "question": "If you have 5 apples and you eat 2, how many apples do you have left?",
-          "options": {
-            "A": 3,
+            "A": 11,
             "B": 7,
-            "C": 5,
+            "C": 10,
             "D": 4
           },
-          "correct_answer": "A"
+          "correctAnswer": "A"
+        },
+        {
+          "question": "If you have 11 apples and you eat 4, how many apples do you have left?",
+          "options": {
+            "A": 7,
+            "B": 15,
+            "C": 8,
+            "D": 9
+          },
+          "correctAnswer": "A"
         },
         {
           "question": "What comes after 9 in the counting sequence?",
@@ -986,7 +986,7 @@
             "C": 7,
             "D": 11
           },
-          "correct_answer": "B"
+          "correctAnswer": "B"
         },
         {
           "question": "If you have 2 dimes and 3 nickels, how much money do you have in total?",
@@ -996,7 +996,7 @@
             "C": "25 cents",
             "D": "15 cents"
           },
-          "correct_answer": "B"
+          "correctAnswer": "B"
         },
         {
           "question": "Which shape has three sides and three corners?",
@@ -1006,7 +1006,7 @@
             "C": "Triangle",
             "D": "Rectangle"
           },
-          "correct_answer": "C"
+          "correctAnswer": "C"
         },
         {
           "question": "If you count by twos starting from 2, what is the next number in the sequence?",
@@ -1016,7 +1016,7 @@
             "C": 4,
             "D": 6
           },
-          "correct_answer": "C"
+          "correctAnswer": "C"
         },
         {
           "question": "What is 8 minus 3?",
@@ -1026,17 +1026,17 @@
             "C": 5,
             "D": 8
           },
-          "correct_answer": "C"
+          "correctAnswer": "C"
         },
         {
-          "question": "Which number is even?",
+          "question": "Which number is odd?",
           "options": {
-            "A": 3,
-            "B": 5,
-            "C": 9,
-            "D": 8
+            "A": 6,
+            "B": 2,
+            "C": 8,
+            "D": 9
           },
-          "correct_answer": "D"
+          "correctAnswer": "D"
         },
         {
           "question": "If you have 7 marbles and you give away 2, how many marbles do you have left?",
@@ -1046,51 +1046,51 @@
             "C": 9,
             "D": 5
           },
-          "correct_answer": "D"
+          "correctAnswer": "D"
         }
       ]
     },
     "Science": {
       "questions": [
         {
-          "question": "What is the smallest planet in our solar system?",
+          "question": "A river bringing sediment from a mountain to a lake is an example of what geological process?",
           "options": {
-            "A": "Mercury",
-            "B": "Venus",
-            "C": "Earth",
-            "D": "Mars"
+            "A": "Erosion",
+            "B": "Weathering",
+            "C": "Plate Tectonics",
+            "D": "Volcanism"
           },
-          "correct_answer": "A"
+          "correctAnswer": "A"
         },
         {
-          "question": "What is the process by which water changes from a liquid to a gas?",
-          "options": {
-            "A": "Melting",
-            "B": "Evaporation",
-            "C": "Freezing",
-            "D": "Condensation"
-          },
-          "correct_answer": "B"
-        },
-        {
-          "question": "Which of these is a mammal that can fly?",
-          "options": {
-            "A": "Fish",
-            "B": "Bird",
-            "C": "Bat",
-            "D": "Snake"
-          },
-          "correct_answer": "C"
-        },
-        {
-          "question": "What gives plants their green color?",
+          "question": "What is water called when it's a solid?",
           "options": {
             "A": "Water",
-            "B": "Sunlight",
-            "C": "Soil",
-            "D": "Chlorophyll"
+            "B": "Ice",
+            "C": "Water Vapor",
+            "D": "Condensation"
           },
-          "correct_answer": "D"
+          "correctAnswer": "B"
+        },
+        {
+          "question": "What happens to ice cream when it is heated?",
+          "options": {
+            "A": "It freezes",
+            "B": "It evaporates",
+            "C": "It melts",
+            "D": "Nothing"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "Which state of matter has its own shape and can be held in your hand?",
+          "options": {
+            "A": "Gas",
+            "B": "Plasma",
+            "C": "Liquid",
+            "D": "Solid"
+          },
+          "correctAnswer": "D"
         },
         {
           "question": "What is the force that pulls objects towards the Earth?",
@@ -1100,7 +1100,7 @@
             "C": "Friction",
             "D": "Air"
           },
-          "correct_answer": "A"
+          "correctAnswer": "A"
         },
         {
           "question": "What is the closest star to Earth?",
@@ -1110,7 +1110,7 @@
             "C": "Proxima Centauri",
             "D": "Mars"
           },
-          "correct_answer": "B"
+          "correctAnswer": "B"
         },
         {
           "question": "What is the process of a caterpillar changing into a butterfly called?",
@@ -1120,17 +1120,17 @@
             "C": "Metamorphosis",
             "D": "Camouflage"
           },
-          "correct_answer": "C"
+          "correctAnswer": "C"
         },
         {
-          "question": "What is the study of stars, planets, and the universe called?",
+          "question": "If you have a material that is hard, shiny, opaque, and stiff, what is it probably?",
           "options": {
-            "A": "Geology",
-            "B": "Biology",
-            "C": "Chemistry",
-            "D": "Astronomy"
+            "A": "Plastic",
+            "B": "Rubber",
+            "C": "Glass",
+            "D": "Metal"
           },
-          "correct_answer": "D"
+          "correctAnswer": "D"
         },
         {
           "question": "What is the source of energy for most living things on Earth?",
@@ -1140,7 +1140,7 @@
             "C": "Air",
             "D": "Soil"
           },
-          "correct_answer": "A"
+          "correctAnswer": "A"
         }
       ]
     },
@@ -1154,7 +1154,7 @@
             "C": "George Washington",
             "D": "Benjamin Franklin"
           },
-          "correct_answer": "A"
+          "correctAnswer": "A"
         },
         {
           "question": "Which famous woman helped enslaved people escape to freedom on the Underground Railroad?",
@@ -1164,7 +1164,7 @@
             "C": "Susan B. Anthony",
             "D": "Rosa Parks"
           },
-          "correct_answer": "A"
+          "correctAnswer": "A"
         },
         {
           "question": "What did Christopher Columbus discover in 1492?",
@@ -1174,7 +1174,7 @@
             "C": "Australia",
             "D": "Atlantis"
           },
-          "correct_answer": "B"
+          "correctAnswer": "B"
         },
         {
           "question": "Who wrote the famous speech, 'I Have a Dream'?",
@@ -1184,7 +1184,7 @@
             "C": "George Washington",
             "D": "Abraham Lincoln"
           },
-          "correct_answer": "B"
+          "correctAnswer": "B"
         },
         {
           "question": "What did the ancient Egyptians use to write on?",
@@ -1194,7 +1194,7 @@
             "C": "Stone tablets",
             "D": "Animal skins"
           },
-          "correct_answer": "B"
+          "correctAnswer": "B"
         },
         {
           "question": "Which war was fought between the North and the South in the United States during the 1860s?",
@@ -1204,7 +1204,7 @@
             "C": "The Civil War",
             "D": "The Vietnam War"
           },
-          "correct_answer": "C"
+          "correctAnswer": "C"
         },
         {
           "question": "Who was the first person to walk on the moon?",
@@ -1214,7 +1214,7 @@
             "C": "Neil Armstrong",
             "D": "Sally Ride"
           },
-          "correct_answer": "C"
+          "correctAnswer": "C"
         },
         {
           "question": "What is the famous ancient structure in Egypt with a lion's body and a human head?",
@@ -1224,7 +1224,7 @@
             "C": "The Sphinx",
             "D": "The Leaning Tower of Pisa"
           },
-          "correct_answer": "C"
+          "correctAnswer": "C"
         },
         {
           "question": "Who is known for inventing the light bulb?",
@@ -1234,7 +1234,7 @@
             "C": "Benjamin Franklin",
             "D": "Thomas Edison"
           },
-          "correct_answer": "D"
+          "correctAnswer": "D"
         },
         {
           "question": "Which leader of India played a key role in gaining India's independence from British rule?",
@@ -1244,7 +1244,7 @@
             "C": "Winston Churchill",
             "D": "Mahatma Gandhi"
           },
-          "correct_answer": "D"
+          "correctAnswer": "D"
         }
       ]
     },
@@ -1332,6 +1332,363 @@
         }
       ]
     }
+  },
+  "3": {
+    "Math": {
+      "questions": [
+        {
+          "question": "What is 42 + 19?",
+          "options": {
+            "A": 61,
+            "B": 60,
+            "C": 62,
+            "D": 63
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "If you have 5 apples and you eat 5, how many apples do you have left?",
+          "options": {
+            "A": 0,
+            "B": -1,
+            "C": 5,
+            "D": 1
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "What is 7 multiplied by 8?",
+          "options": {
+            "A": 48,
+            "B": 56,
+            "C": 64,
+            "D": 72
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "If a rectangle has a length of 12 units and a width of 8 units, what is its perimeter?",
+          "options": {
+            "A": 16,
+            "B": 40,
+            "C": 32,
+            "D": 42
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "Which of the following is an even number?",
+          "options": {
+            "A": 13,
+            "B": 19,
+            "C": 26,
+            "D": 33
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "If you add 25 to a number and get 53, what is the number?",
+          "options": {
+            "A": 25,
+            "B": 30,
+            "C": 28,
+            "D": 53
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "How many sides does an octagon have?",
+          "options": {
+            "A": 3,
+            "B": 5,
+            "C": 6,
+            "D": 8
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "question": "If you have 4 quarters, how much money do you have in total?",
+          "options": {
+            "A": "$0.10",
+            "B": "$0.25",
+            "C": "$0.50",
+            "D": "$1.00"
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "question": "Which number comes after 39?",
+          "options": {
+            "A": 40,
+            "B": 41,
+            "C": 42,
+            "D": 43
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "If you count by fives (5, 10, 15, 20, ...), what comes after 35?",
+          "options": {
+            "A": 30,
+            "B": 35,
+            "C": 40,
+            "D": 45
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    "Science": {
+      "questions": [
+        {
+          "question": "What is the process of water turning into vapor and rising into the air called?",
+          "options": {
+            "A": "Condensation",
+            "B": "Evaporation",
+            "C": "Precipitation",
+            "D": "Sublimation"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "Which of these animals is a reptile?",
+          "options": {
+            "A": "Dog",
+            "B": "Cat",
+            "C": "Snake",
+            "D": "Dolphin"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "What is the largest planet in our solar system?",
+          "options": {
+            "A": "Earth",
+            "B": "Mars",
+            "C": "Jupiter",
+            "D": "Venus"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "What is the process of a solid changing directly into a gas without becoming a liquid first called?",
+          "options": {
+            "A": "Sublimation",
+            "B": "Evaporation",
+            "C": "Condensation",
+            "D": "Melting"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "Which of the following is not a primary color?",
+          "options": {
+            "A": "Red",
+            "B": "Purple",
+            "C": "Yellow",
+            "D": "Blue"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "What is the force that pulls all objects toward the center of the Earth?",
+          "options": {
+            "A": "Magnetism",
+            "B": "Gravity",
+            "C": "Friction",
+            "D": "Air resistance"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "Which of the following is a cold-blooded animal?",
+          "options": {
+            "A": "Frog",
+            "B": "Eagle",
+            "C": "Lion",
+            "D": "Hamster"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "What is the process of a liquid turning into a gas called?",
+          "options": {
+            "A": "Freezing",
+            "B": "Condensation",
+            "C": "Evaporation",
+            "D": "Melting"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "Which of the following is a biotic factor?",
+          "options": {
+            "A": "Rock",
+            "B": "Sunlight",
+            "C": "River",
+            "D": "Bird"
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "question": "Which is an example of a homogeneous mixture?",
+          "options": {
+            "A": "Trail mix",
+            "B": "Cereal",
+            "C": "Guacamole",
+            "D": "Jello"
+          },
+          "correctAnswer": "D"
+        }
+      ]
+    },
+    "History": {
+      "questions": [
+        {
+          "question": "When was the declaration of independence signed?",
+          "options": {
+            "A": "July 4",
+            "B": "June 4",
+            "C": "August 4",
+            "D": "September 4"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "When did World War 1 start?",
+          "options": {
+            "A": "1814",
+            "B": "1914",
+            "C": "1915",
+            "D": "1815"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "Which of these is not a US state?",
+          "options": {
+            "A": "Texas",
+            "B": "California",
+            "C": "Seattle",
+            "D": "New York"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "How many countries make up the UK?",
+          "options": {
+            "A": 4,
+            "B": 17,
+            "C": 6,
+            "D": 12
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "Which ancient civilization inventer papyrus?",
+          "options": {
+            "A": "Chinese",
+            "B": "Egyptians",
+            "C": "Romans",
+            "D": "Grecians"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "What was one of the biggest inventions to come from ancient China?",
+          "options": {
+            "A": "Papyrus",
+            "B": "Watermill",
+            "C": "Gunpowder",
+            "D": "Aqueducts"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "What is the first known civilization?",
+          "options": {
+            "A": "Greece",
+            "B": "Mali",
+            "C": "China",
+            "D": "Mesopotamia"
+          },
+          "correctAnswer": "D"
+        }
+      ]
+    },
+    "ELA": {
+      "questions": [
+        {
+          "question": "Which of these is a synonym to happy?",
+          "options": {
+            "A": "Joyful",
+            "B": "Sad",
+            "C": "Angry",
+            "D": "Excited"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "What is the verb in the sentence: 'The birds sing sweetly'?",
+          "options": {
+            "A": "Birds",
+            "B": "Sing",
+            "C": "Sweetly",
+            "D": "The"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "Which word is an adjective in the sentence: 'The big, red balloon floated away'?",
+          "options": {
+            "A": "Balloon",
+            "B": "Floated",
+            "C": "Big",
+            "D": "The"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "What is the pronoun that can replace the noun 'Amy' in this sentence: 'Amy is reading a book'?",
+          "options": {
+            "A": "She",
+            "B": "Her",
+            "C": "We",
+            "D": "Him"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "What is the subject in the sentence: 'The dog barks loudly'?",
+          "options": {
+            "A": "Barks",
+            "B": "Dog",
+            "C": "The",
+            "D": "Loudly"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "Which of the following is a complete sentence?",
+          "options": {
+            "A": " Running quickly.",
+            "B": "Happy and excited.",
+            "C": "The sun is shining.",
+            "D": "Under the table."
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "When do we use a question mark?",
+          "options": {
+            "A": "To end a statement",
+            "B": "To show excitement",
+            "C": "To express surprise",
+            "D": "To ask a question"
+          },
+          "correctAnswer": "D"
+        }
+      ]
+    }
   }
 }
-
