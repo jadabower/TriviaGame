@@ -26,6 +26,24 @@ class QuestionHandler():
                 self.questionPool = data["1"]["History"]["questions"]
             else:
                 self.questionPool = data["1"]["ELA"]["questions"]
+        elif self.grade == "2":
+            if self.subject == "Math":
+                self.questionPool = data["2"]["Math"]["questions"]
+            elif self.subject == "Science":
+                self.questionPool = data["2"]["Science"]["questions"]
+            elif self.subject == "History":
+                self.questionPool = data["2"]["History"]["questions"]
+            else:
+                self.questionPool = data["2"]["ELA"]["questions"]
+        elif self.grade == "3":
+            if self.subject == "Math":
+                self.questionPool = data["3"]["Math"]["questions"]
+            elif self.subject == "Science":
+                self.questionPool = data["3"]["Science"]["questions"]
+            elif self.subject == "History":
+                self.questionPool = data["3"]["History"]["questions"]
+            else:
+                self.questionPool = data["3"]["ELA"]["questions"]
         f.close()
 
     def getRandomQuestion(self):
