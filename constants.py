@@ -1,3 +1,5 @@
+import pygame
+
 # CONSTANTS
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
@@ -5,7 +7,7 @@ FPS = 60
 GRID_SIZE = 50 # this is for debugging purposes in setting the placement of assets
 
 # define colors
-WHITE = (255,255,255)
+WHITE = pygame.Color('#FF0000')
 TEAL = (6, 81, 67)
 PINK = (255, 0, 255)
 GREEN = (0, 255, 0)
@@ -23,4 +25,4 @@ SILVER = (192, 192, 192)
 GRAY = (128, 128, 128)
 BLUE = (0, 0, 255)
 BROWN = (165, 42, 42)
-BLACK = (0, 0, 0)
+BLACK = pygame.Color('#000000')

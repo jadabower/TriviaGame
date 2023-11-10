@@ -1,5 +1,3 @@
-import pygame
-import random
 import json
 
 class QuestionHandler():
@@ -8,6 +6,7 @@ class QuestionHandler():
         data = json.load(f)
         self.grade = grade
         self.subject = subject
+        self.questionIndex = 0
         if self.grade == "K":
             if self.subject == "Math":
                 self.questionPool = data["K"]["Math"]["questions"]
@@ -44,8 +43,5 @@ class QuestionHandler():
                 self.questionPool = data["3"]["History"]["questions"]
             else:
                 self.questionPool = data["3"]["ELA"]["questions"]
+        self.numberOfQuestionsBase0 = len(self.questionPool) - 1
         f.close()
-
-    def getRandomQuestion(self):
-        index = random.randint(0, len(self.questionPool) - 1)
-        print(self.questionPool[index])
