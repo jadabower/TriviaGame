@@ -103,6 +103,14 @@ buttonHistory = button(80, 245, 'History')
 buttonELA = button(320, 245, 'ELA')
 buttonToGrade = button(300, 400, "Grade")
 
+# Buttons A,B,C,D when user presses play
+
+buttona = button(80, 150, 'A')
+buttonb = button(320, 150, 'B')
+buttonc = button(80, 245, 'C')
+buttond = button(320, 245, 'D')
+
+
 run = True
 while run:
 	screen.fill(bg)	
@@ -206,8 +214,8 @@ while run:
 				print('D')
 				choice = 'D'
 		print('Back to Menu')
-		level = False
-		mainMenu = True
+		# level = False
+		# mainMenu = True
 		
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
