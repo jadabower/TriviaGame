@@ -4,7 +4,6 @@ from pygame.locals import *
 
 pygame.init()
 
-
 screen_width = 600
 screen_height = 600
 
@@ -185,9 +184,10 @@ while run:
 	# LEVEL
 	elif level:
 		# Creates a question handler (with a question pool from the JSON file based on the options picked)
-		questionHand = questionHandler.QuestionHandler(gradeSelected, subjectSelected)
+		questionHand = questionHandler.QuestionHandler()
+		questionPool = questionHand.getQuestion(gradeSelected, subjectSelected)
 		# Loops through all the questions
-		for questionIndex, question in enumerate(questionHand.questionPool):
+		for question in enumerate(questionPool):
 			# Shows the points
 			choice = ''
 			print(question)
@@ -215,7 +215,7 @@ while run:
 				choice = 'D'
 		print('Back to Menu')
 		# level = False
-		# mainMenu = True
+		# mainMenu = True # We need to handle this in a game handler class. I'm going to need to make one SJD
 		
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
