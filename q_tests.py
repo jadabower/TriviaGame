@@ -5,13 +5,8 @@ questionHand = QuestionHandler()
 print(f"Question hand: {questionHand}")
 
 
-questionPool = questionHand.createQuestionPool('K', 'Math')
-question = questionHand.getQuestion(questionPool)
-print(f"Question pool: {question}")
+kMathQP = questionHand.createQuestionPool('K', 'Math')
 
-question = questionHand.getQuestion(questionPool)
-print(f"Question pool: {question}")
+print(f"Question pool: {kMathQP.getQuestion()}")
 
-for i in questionPool:
-    question = questionHand.getQuestion(questionPool)
-    print(f"Question pool: {question}")
+kMathQP.questionPool.count()
