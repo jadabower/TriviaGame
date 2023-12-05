@@ -187,7 +187,8 @@ while run:
 		questionHand = questionHandler.QuestionHandler()
 		questionPool = questionHand.getQuestion(gradeSelected, subjectSelected)
 		# Loops through all the questions
-		for question in enumerate(questionPool):
+		# CREATE QUESTION POOL HERE!!
+		for questionIndex, question in enumerate(questionPool):
 			# Shows the points
 			choice = ''
 			print(question)

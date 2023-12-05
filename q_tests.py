@@ -5,8 +5,11 @@ questionHand = QuestionHandler()
 print(f"Question hand: {questionHand}")
 
 
-kMathQP = questionHand.createQuestionPool('K', 'Math')
+questionHand.createQuestionPool('K', 'Math')
+print(questionHand.points)
 
-print(f"Question pool: {kMathQP.getQuestion()}")
+question1 = questionHand.getQuestion()
+print(f"Question 1: {question1.getText()}")
+# print(f"Question pool: {questionHand.getQuestion().getText()}")
 
-kMathQP.questionPool.count()
+questionHand.checkAnswer('B')

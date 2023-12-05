@@ -1,42 +1,43 @@
 import json
-import Question
+from question import Question
 
 class QuestionHandler():
     def __init__(self):
         f = open('questionsObject.json')
         self.data = json.load(f)
         f.close()
-        self.quesstionPool = []
+        self.questionPool = []
         self.points = 0
 
     def createQuestionPool(self, grade, subject):
         # Creates a question pool (a list of Question objects)
         questionPoolArray = self.data[grade][subject]["questions"]
-        for question in questionPoolArray:
-            text = question["question"]
-            options = question["options"]
-            correctAnswer = question["correctAnswer"]
+        for q in questionPoolArray:
+            text = q["question"]
+            options = q["options"]
+            correctAnswer = q["correctAnswer"]
 
-            question = Question.Question(text, options, correctAnswer)
-            self.quesstionPool.append(question)
+            currentQ = Question(text, options, correctAnswer)
+            # print(f"{q}")
+            # print(f"{currentQ.__dict__}")
+            # print(f"{currentQ.getText()}")
+            self.questionPool.append(currentQ)
         # return questionPool
 
     def getQuestion(self):
-        if self.quesstionPool.count == 0:
-            return False
+        if len(self.questionPool) == 0:
+            print("help")
         else:
-            self.questionPool[0]
+            return self.questionPool[0]
 
     def checkAnswer(self, answer):
         currentQuestion = self.questionPool[0]
         if currentQuestion.checkAnswer(answer):
+            print("correct")
             self.points += 10
             self.questionPool.pop(0)
         else:
+            print("incorrect")
             self.points -= 5
-            self.quesstionPool.append(currentQuestion)
-            self.quesstionPool.pop(0)
-
-        
-
-    # def points(self, correct):
+            self.questionPool.append(currentQuestion)
+            self.questionPool.pop(0)
