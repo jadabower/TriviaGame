@@ -10,6 +10,12 @@ print(questionHand.points)
 
 question1 = questionHand.getQuestion()
 print(f"Question 1: {question1.getText()}")
-# print(f"Question pool: {questionHand.getQuestion().getText()}")
+print(f"Question pool: {questionHand.getQuestion().getText()}")
 
+questionHand.checkAnswer('B')
+
+question2 = questionHand.getQuestion()
+print(f"Question 2: {question2.text}")
+print(f'question 2: {question2.options}')
+print(f"Question 2: {question2.answer}")
 questionHand.checkAnswer('B')

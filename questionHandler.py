@@ -29,7 +29,7 @@ class QuestionHandler():
 
     def getQuestion(self):
         if len(self.questionPool) == 0:
-            print("help")
+            print('help')
         else:
             return self.questionPool[0]
 
@@ -39,8 +39,10 @@ class QuestionHandler():
             print("correct")
             self.points += 10
             self.questionPool.pop(0)
+            return True
         else:
             print("incorrect")
             self.points -= 5
             self.questionPool.append(currentQuestion)
             self.questionPool.pop(0)
+            return False

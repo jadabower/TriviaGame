@@ -108,43 +108,50 @@ buttonb = button(320, 150, 'B')
 buttonc = button(80, 245, 'C')
 buttond = button(320, 245, 'D')
 
-def playLevel(questionHandler, screen):
-	print("playing level")
-	currentQuestion = questionHand.getQuestion()
-	if currentQuestion != False:
-		playQuestion(currentQuestion, questionHandler, screen)
-	else:
-		return questionHandler.getPoints()
+# def playLevel(questionHandler, screen):
+# 	print("playing level")
+# 	currentQuestion = questionHandler.getQuestion()
+# 	if currentQuestion != False:
+# 		playQuestion(currentQuestion, questionHandler, screen)
+# 	else:
+# 		return questionHandler.getPoints()
 
-def playQuestion(currentQuestion, questionHandler, screen):
-	print("playing question")
-	# Shows the points
-	screen.blit(points_img, (25, 550))
-	# Shows the question
-	question_img = font.render(f"{currentQuestion.getText()}", True, teal)
-	screen.blit(question_img, (100, 100))
-	# Shows the four options
-	buttonA = button(80, 105, str(currentQuestion.getA()))
-	buttonB = button(320, 105, str(currentQuestion.getB()))
-	buttonC = button(80, 245, str(currentQuestion.getC()))
-	buttonD = button(320, 245, str(currentQuestion.getD()))
+# def playQuestion(currentQuestion, questionHandler, screen):
+# 	print("playing question")
+# 	# Shows the points
+# 	screen.blit(points_img, (25, 550))
+# 	# Shows the question
+# 	question_img = font.render(f"{currentQuestion.getText()}", True, teal)
+# 	screen.blit(question_img, (100, 100))
+# 	# Shows the four options
+# 	buttonA = button(80, 175, str(currentQuestion.getA()))
+# 	buttonB = button(320, 175, str(currentQuestion.getB()))
+# 	buttonC = button(80, 345, str(currentQuestion.getC()))
+# 	buttonD = button(320, 345, str(currentQuestion.getD()))
 
-	if buttonA.draw_button():
-		print('A')
-		questionHandler.checkAnswer('A')
-		playLevel(questionHandler)
-	elif buttonB.draw_button():
-		print('B')
-		questionHandler.checkAnswer('B')
-		playLevel(questionHandler)
-	elif buttonC.draw_button():
-		print('C')
-		questionHandler.checkAnswer('C')
-		playLevel(questionHandler)
-	elif buttonD.draw_button():
-		print('D')
-		questionHandler.checkAnswer('D')
-		playLevel(questionHandler)
+# 	if buttonA.draw_button():
+# 		print('A')
+# 		questionHandler.checkAnswer('A')
+# 		print("kms")
+# 		playLevel(questionHandler)
+# 	elif buttonB.draw_button():
+# 		print('B')
+# 		questionHandler.checkAnswer('B')
+# 		print("kms")
+# 		playLevel(questionHandler, screen)
+# 	elif buttonC.draw_button():
+# 		print('C')
+# 		questionHandler.checkAnswer('C')
+# 		print("kms")
+# 		# playLevel(questionHandler, screen)
+# 	elif buttonD.draw_button():
+# 		print('D')
+# 		questionHandler.checkAnswer('D')
+# 		print("kms plz")
+# 		# playLevel(questionHandler, screen)
+
+questionHand = QuestionHandler()
+
 
 run = True
 while run:
@@ -209,6 +216,7 @@ while run:
 		screen.blit(points_img, (25, 25))
 		# Start button pressed
 		if buttonStartGame.draw_button():
+			questionHand.createQuestionPool(gradeSelected, subjectSelected)
 			print(f'Start level ({gradeSelected}, {subjectSelected})')
 			mainMenu = False
 			level = True
@@ -219,13 +227,46 @@ while run:
 			gradeSelectorScreen = True
 	# LEVEL
 	elif level:
+		currentQuestion = questionHand.getQuestion()
+		print(f"curr q : {currentQuestion.__dict__}")
+		# Shows the points
+		screen.blit(points_img, (25, 550))
+		# Shows the question
+		question_img = font.render(f"{currentQuestion.getText()}", True, teal)
+		screen.blit(question_img, (100, 100))
+		# Shows the four options
+		buttonA = button(80, 175, str(currentQuestion.getA()))
+		buttonB = button(320, 175, str(currentQuestion.getB()))
+		buttonC = button(80, 345, str(currentQuestion.getC()))
+		buttonD = button(320, 345, str(currentQuestion.getD()))
+
+		if buttonA.draw_button():
+			print('A')
+			questionHand.checkAnswer('A')
+			points = questionHand.points
+			print("kms")
+		if buttonB.draw_button():
+			print('B')
+			questionHand.checkAnswer('B')
+			points = questionHand.points
+			print("kms")
+		if buttonC.draw_button():
+			print('C')
+			questionHand.checkAnswer('C')
+			points = questionHand.points
+			print("kms")
+		if buttonD.draw_button():
+			print('D')
+			questionHand.checkAnswer('D')
+			points = questionHand.points
+			print("kms plz")
+			
 		# Creates a question handler (with a question pool from the JSON file based on the options picked)
-		questionHand = QuestionHandler()
-		questionHand.createQuestionPool(gradeSelected, subjectSelected)
-		playLevel(questionHand, screen)
-		print('Back to Menu')
-		level = False
-		mainMenu = True
+		if len(questionHand.questionPool) <= 0:
+			print('Back to Menu')
+			level = False
+			mainMenu = True
+			
 		
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:

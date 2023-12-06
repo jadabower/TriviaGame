@@ -22,5 +22,8 @@ class Question():
         return self.options['C']
     def getD(self):
         return self.options['D']
+    
+    def getAnswer(self):
+        return self.answer
 
        
