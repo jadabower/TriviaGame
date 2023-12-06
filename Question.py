@@ -13,5 +13,14 @@ class Question():
 
     def getText(self):
         return self.text
+    
+    def getA(self):
+        return self.options['A']
+    def getB(self):
+        return self.options['B']
+    def getC(self):
+        return self.options['C']
+    def getD(self):
+        return self.options['D']
 
        

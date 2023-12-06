@@ -24,6 +24,9 @@ class QuestionHandler():
             self.questionPool.append(currentQ)
         # return questionPool
 
+    def getPoints(self):
+        return self.points
+
     def getQuestion(self):
         if len(self.questionPool) == 0:
             print("help")

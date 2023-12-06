@@ -1,5 +1,5 @@
 import pygame
-import questionHandler
+from questionHandler import QuestionHandler
 from pygame.locals import *
 
 pygame.init()
@@ -103,12 +103,48 @@ buttonELA = button(320, 245, 'ELA')
 buttonToGrade = button(300, 400, "Grade")
 
 # Buttons A,B,C,D when user presses play
-
 buttona = button(80, 150, 'A')
 buttonb = button(320, 150, 'B')
 buttonc = button(80, 245, 'C')
 buttond = button(320, 245, 'D')
 
+def playLevel(questionHandler, screen):
+	print("playing level")
+	currentQuestion = questionHand.getQuestion()
+	if currentQuestion != False:
+		playQuestion(currentQuestion, questionHandler, screen)
+	else:
+		return questionHandler.getPoints()
+
+def playQuestion(currentQuestion, questionHandler, screen):
+	print("playing question")
+	# Shows the points
+	screen.blit(points_img, (25, 550))
+	# Shows the question
+	question_img = font.render(f"{currentQuestion.getText()}", True, teal)
+	screen.blit(question_img, (100, 100))
+	# Shows the four options
+	buttonA = button(80, 105, str(currentQuestion.getA()))
+	buttonB = button(320, 105, str(currentQuestion.getB()))
+	buttonC = button(80, 245, str(currentQuestion.getC()))
+	buttonD = button(320, 245, str(currentQuestion.getD()))
+
+	if buttonA.draw_button():
+		print('A')
+		questionHandler.checkAnswer('A')
+		playLevel(questionHandler)
+	elif buttonB.draw_button():
+		print('B')
+		questionHandler.checkAnswer('B')
+		playLevel(questionHandler)
+	elif buttonC.draw_button():
+		print('C')
+		questionHandler.checkAnswer('C')
+		playLevel(questionHandler)
+	elif buttonD.draw_button():
+		print('D')
+		questionHandler.checkAnswer('D')
+		playLevel(questionHandler)
 
 run = True
 while run:
@@ -184,45 +220,17 @@ while run:
 	# LEVEL
 	elif level:
 		# Creates a question handler (with a question pool from the JSON file based on the options picked)
-		questionHand = questionHandler.QuestionHandler()
-		questionPool = questionHand.getQuestion(gradeSelected, subjectSelected)
-		# Loops through all the questions
-		# CREATE QUESTION POOL HERE!!
-		for questionIndex, question in enumerate(questionPool):
-			# Shows the points
-			choice = ''
-			print(question)
-			screen.blit(points_img, (25, 550))
-			# Shows the question
-			question_img = font.render(f"Q {questionIndex + 1}/{len(questionHand.questionPool)} )\n{question['question']}", True, teal)
-			screen.blit(question_img, (100, 100))
-			# Shows the four options
-			buttonA = button(80, 105, str(question['options']['A']))
-			buttonB = button(320, 105, str(question['options']['B']))
-			buttonC = button(80, 245, str(question['options']['C']))
-			buttonD = button(320, 245, str(question['options']['D']))
-			# while choice != str(question['correctAnswer']):
-			if buttonA.draw_button():
-				print('A')
-				choice = 'A'
-			elif buttonB.draw_button():
-				print('B')
-				choice = 'B'
-			elif buttonC.draw_button():
-				print('C')
-				choice = 'C'
-			elif buttonD.draw_button():
-				print('D')
-				choice = 'D'
+		questionHand = QuestionHandler()
+		questionHand.createQuestionPool(gradeSelected, subjectSelected)
+		playLevel(questionHand, screen)
 		print('Back to Menu')
-		# level = False
-		# mainMenu = True # We need to handle this in a game handler class. I'm going to need to make one SJD
+		level = False
+		mainMenu = True
 		
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
 			run = False	
 	
 	pygame.display.update()
-
 
 pygame.quit()
