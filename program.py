@@ -1,6 +1,8 @@
 import pygame
 from questionHandler import QuestionHandler
 from pygame.locals import *
+from textWrap import renderTextCenteredAt
+import webbrowser
 
 pygame.init()
 
@@ -11,6 +13,9 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Trivia Game')
 
 font = pygame.font.Font('font\SourceCodePro-VariableFont_wght.ttf', 20)
+
+link_font = pygame.font.SysFont('Consolas', 25)
+link_color = (0, 0, 0)
 
 #define colors
 bg = (6, 81, 67)
@@ -32,17 +37,17 @@ level = False
 
 class button():
 		
-	#colors for button and text
+	# colors for button and text
 	button_col = (88, 173, 159)
 	hover_col = (75, 147, 136)
 	click_col = (48, 95, 88)
-	text_col = black
 	width = 180
 	height = 70
 
 	def __init__(self, x, y, text):
 		self.x = x
 		self.y = y
+		self.textY = y
 		self.text = text
 
 	def draw_button(self):
@@ -76,9 +81,13 @@ class button():
 		pygame.draw.line(screen, black, (self.x + self.width, self.y), (self.x + self.width, self.y + self.height), 2)
 
 		#add text to button
-		text_img = font.render(self.text, True, self.text_col)
-		text_len = text_img.get_width()
-		screen.blit(text_img, (self.x + int(self.width / 2) - int(text_len / 2), self.y + 25))
+		# text_img = font.render(self.text, True, self.text_col)
+		# text_len = text_img.get_width()
+		if " " in self.text:
+			self.textY -= 10
+		 
+		renderTextCenteredAt(self.text, font, black, self.x + 90, self.textY, screen, self.width)
+		# screen.blit(text_img, (self.x + int(self.width / 2) - int(text_len / 2), self.y + 25))
 		return action
 
 # Main Menu Button
@@ -87,13 +96,13 @@ buttonOptions = button(210, 245, "Options")
 
 # Grade selector buttons
 buttonK = button(80, 105, 'Kindergarten')
-button1 = button(320, 105, '1st Grade')
-button2 = button(80, 245, '2nd Grade')
-button3 = button(320, 245, '3rd Grade')
+button1 = button(320, 105, '1st')
+button2 = button(80, 245, '2nd')
+button3 = button(320, 245, '3rd')
 buttonToSubject = button(300, 400, "Subject")
 
 # Menu button for both options screens
-buttonBackToMenu = button(100, 400, "Main Menu")
+buttonBackToMenu = button(100, 400, "Menu")
 
 # Subject selector buttons
 buttonMath = button(80, 105, 'Math')
@@ -108,50 +117,7 @@ buttonb = button(320, 150, 'B')
 buttonc = button(80, 245, 'C')
 buttond = button(320, 245, 'D')
 
-# def playLevel(questionHandler, screen):
-# 	print("playing level")
-# 	currentQuestion = questionHandler.getQuestion()
-# 	if currentQuestion != False:
-# 		playQuestion(currentQuestion, questionHandler, screen)
-# 	else:
-# 		return questionHandler.getPoints()
-
-# def playQuestion(currentQuestion, questionHandler, screen):
-# 	print("playing question")
-# 	# Shows the points
-# 	screen.blit(points_img, (25, 550))
-# 	# Shows the question
-# 	question_img = font.render(f"{currentQuestion.getText()}", True, teal)
-# 	screen.blit(question_img, (100, 100))
-# 	# Shows the four options
-# 	buttonA = button(80, 175, str(currentQuestion.getA()))
-# 	buttonB = button(320, 175, str(currentQuestion.getB()))
-# 	buttonC = button(80, 345, str(currentQuestion.getC()))
-# 	buttonD = button(320, 345, str(currentQuestion.getD()))
-
-# 	if buttonA.draw_button():
-# 		print('A')
-# 		questionHandler.checkAnswer('A')
-# 		print("kms")
-# 		playLevel(questionHandler)
-# 	elif buttonB.draw_button():
-# 		print('B')
-# 		questionHandler.checkAnswer('B')
-# 		print("kms")
-# 		playLevel(questionHandler, screen)
-# 	elif buttonC.draw_button():
-# 		print('C')
-# 		questionHandler.checkAnswer('C')
-# 		print("kms")
-# 		# playLevel(questionHandler, screen)
-# 	elif buttonD.draw_button():
-# 		print('D')
-# 		questionHandler.checkAnswer('D')
-# 		print("kms plz")
-# 		# playLevel(questionHandler, screen)
-
 questionHand = QuestionHandler()
-
 
 run = True
 while run:
@@ -225,15 +191,23 @@ while run:
 			print('Go to options')
 			mainMenu = False
 			gradeSelectorScreen = True
+
+		link = screen.blit(link_font.render("Web App", True, link_color), (490, 570))
+		
+
+			
+
 	# LEVEL
 	elif level:
 		currentQuestion = questionHand.getQuestion()
-		print(f"curr q : {currentQuestion.__dict__}")
 		# Shows the points
 		screen.blit(points_img, (25, 550))
 		# Shows the question
-		question_img = font.render(f"{currentQuestion.getText()}", True, teal)
-		screen.blit(question_img, (100, 100))
+			# question_img = font.render(f"{currentQuestion.getText()}", True, teal)
+			# screen.blit(question_img, (100, 100))
+		x_test = 100
+		y_test = 30
+		renderTextCenteredAt(currentQuestion.getText(), font, teal, screen_width/2, y_test, screen, screen_width * .6)
 		# Shows the four options
 		buttonA = button(80, 175, str(currentQuestion.getA()))
 		buttonB = button(320, 175, str(currentQuestion.getB()))
@@ -244,22 +218,18 @@ while run:
 			print('A')
 			questionHand.checkAnswer('A')
 			points = questionHand.points
-			print("kms")
 		if buttonB.draw_button():
 			print('B')
 			questionHand.checkAnswer('B')
 			points = questionHand.points
-			print("kms")
 		if buttonC.draw_button():
 			print('C')
 			questionHand.checkAnswer('C')
 			points = questionHand.points
-			print("kms")
 		if buttonD.draw_button():
 			print('D')
 			questionHand.checkAnswer('D')
 			points = questionHand.points
-			print("kms plz")
 			
 		# Creates a question handler (with a question pool from the JSON file based on the options picked)
 		if len(questionHand.questionPool) <= 0:
@@ -269,6 +239,20 @@ while run:
 			
 		
 	for event in pygame.event.get():
+		if event.type == pygame.QUIT:
+				running = False
+
+		if event.type == pygame.MOUSEBUTTONDOWN:
+			pos = event.pos
+			if link.collidepoint(pos):
+				webbrowser.open(r"https://stackoverflow.com/")
+
+		if link.collidepoint(pygame.mouse.get_pos()):
+			link_color = (70, 29, 219)
+
+		else:
+			link_color = (0, 0, 0)
+
 		if event.type == pygame.QUIT:
 			run = False	
 	
