@@ -25,5 +25,5 @@ Spencer Damiano
 
 - Implement a timer into the game that counts the answer as wrong if not answered within the alloted time frame.
 - Add in different number of points based on how quickly you answer the question correctly.
-- Add more points for higher grade levels
+- Add more points for higher grade levels.
 - Improve graphics to add in confetti or some sort of celebration for a correct answer.
