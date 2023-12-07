@@ -846,7 +846,7 @@
             "C": "Thomas Jefferson",
             "D": "Frederick Douglass"
           },
-          "correctAnswer": "C"
+          "correctAnswer": "A"
         },
         {
           "question": "What event is celebrated on the 4th of July in the United States?",
@@ -1585,7 +1585,7 @@
           "correctAnswer": "A"
         },
         {
-          "question": "Which ancient civilization inventer papyrus?",
+          "question": "Which ancient civilization invented papyrus?",
           "options": {
             "A": "Chinese",
             "B": "Egyptians",

@@ -80,14 +80,18 @@ class button():
 		pygame.draw.line(screen, black, (self.x, self.y + self.height), (self.x + self.width, self.y + self.height), 2)
 		pygame.draw.line(screen, black, (self.x + self.width, self.y), (self.x + self.width, self.y + self.height), 2)
 
-		#add text to button
-		# text_img = font.render(self.text, True, self.text_col)
-		# text_len = text_img.get_width()
-		if " " in self.text:
+		# If the text has to be split into two lines, it moves the text up slightly so it's still centered
+		if len(self.text) > 14:
 			self.textY -= 10
-		 
-		renderTextCenteredAt(self.text, font, black, self.x + 90, self.textY, screen, self.width)
-		# screen.blit(text_img, (self.x + int(self.width / 2) - int(text_len / 2), self.y + 25))
+			print(self.text)
+
+		# We got rid of this so that we could center the text on the button:
+		# text_img = font.render(self.text, True, black)
+		# text_len = text_img.get_width()
+		# screen.blit(text_img, (self.x + int(self.width / 2) - int(text_len / 2), self.textY + 25))
+		
+		# Centers the text on the button. If it is too long, it sends it to the next line
+		renderTextCenteredAt(self.text, font, black, self.x + 90, self.textY, screen, self.width - 2)
 		return action
 
 # Main Menu Button
@@ -117,8 +121,10 @@ buttonb = button(320, 150, 'B')
 buttonc = button(80, 245, 'C')
 buttond = button(320, 245, 'D')
 
+# Creates a question Handler
 questionHand = QuestionHandler()
 
+# Game loop, replayed constantly until exited
 run = True
 while run:
 	screen.fill(bg)	
@@ -193,18 +199,12 @@ while run:
 			gradeSelectorScreen = True
 
 		link = screen.blit(link_font.render("Web App", True, link_color), (490, 570))
-		
-
-			
-
 	# LEVEL
 	elif level:
 		currentQuestion = questionHand.getQuestion()
 		# Shows the points
 		screen.blit(points_img, (25, 550))
-		# Shows the question
-			# question_img = font.render(f"{currentQuestion.getText()}", True, teal)
-			# screen.blit(question_img, (100, 100))
+		# Shows the question (centered on the x-axis)
 		x_test = 100
 		y_test = 30
 		renderTextCenteredAt(currentQuestion.getText(), font, teal, screen_width/2, y_test, screen, screen_width * .6)
@@ -214,6 +214,7 @@ while run:
 		buttonC = button(80, 345, str(currentQuestion.getC()))
 		buttonD = button(320, 345, str(currentQuestion.getD()))
 
+		# Draws the buttons. If one is clicked, it checks whether it's correct and deals with the answer accordingly
 		if buttonA.draw_button():
 			print('A')
 			questionHand.checkAnswer('A')
@@ -237,7 +238,7 @@ while run:
 			level = False
 			mainMenu = True
 			
-		
+	# Checks that the program has not been exited
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
 				running = False
@@ -256,6 +257,7 @@ while run:
 		if event.type == pygame.QUIT:
 			run = False	
 	
+	# Updates the screen (happens very often)
 	pygame.display.update()
 
 pygame.quit()
