@@ -15,13 +15,13 @@ pygame.display.set_caption('Trivia Game')
 font = pygame.font.Font('font\SourceCodePro-VariableFont_wght.ttf', 20)
 
 link_font = pygame.font.SysFont('Consolas', 25)
-link_color = (0, 0, 0)
 
 #define colors
 bg = (6, 81, 67)
 teal = (88, 173, 159)
 black = (0, 0, 0)
 white = (255, 255, 255)
+link_color = white
 
 #define global variable
 clicked = False
@@ -203,7 +203,7 @@ while run:
 			mainMenu = False
 			gradeSelectorScreen = True
 
-		link = screen.blit(link_font.render("Web App", True, link_color), (490, 570))
+		link = screen.blit(link_font.render("Web App", True, white), (490, 570))
 	# LEVEL
 	elif level:
 		currentQuestion = questionHand.getQuestion()
