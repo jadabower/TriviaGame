@@ -83,7 +83,6 @@ class button():
 		# If the text has to be split into two lines, it moves the text up slightly so it's still centered
 		if len(self.text) > 14:
 			self.textY -= 10
-			print(self.text)
 
 		# We got rid of this so that we could center the text on the button:
 		# text_img = font.render(self.text, True, black)
