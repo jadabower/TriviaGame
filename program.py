@@ -245,7 +245,7 @@ while run:
 		if event.type == pygame.MOUSEBUTTONDOWN:
 			pos = event.pos
 			if link.collidepoint(pos):
-				webbrowser.open(r"https://stackoverflow.com/")
+				webbrowser.open(r"https://master.d2jir32rtcjasl.amplifyapp.com/")
 
 		if link.collidepoint(pygame.mouse.get_pos()):
 			link_color = (70, 29, 219)
