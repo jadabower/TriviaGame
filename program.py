@@ -123,15 +123,21 @@ buttond = button(320, 245, 'D')
 # Creates a question Handler
 questionHand = QuestionHandler()
 
+#Load the image
+size=9000
+imageGH = pygame.image.load("C:\Jada personal\Applied Programming\TriviaGame\TriviaGame\graphics\chalk.jpg") #image file path
+newimageGH = pygame.transform.scale(imageGH,(size,size))
+
 # Game loop, replayed constantly until exited
 run = True
 while run:
-	screen.fill(bg)	
+	screen.fill(pygame.Color("#000000"))
+	screen.blit(imageGH, (0,0))	
 	points_img = font.render("Points: " + str(points), True, teal)
 	# GRADE SELECTOR MENU
 	if gradeSelectorScreen:
 		gradeSelected_img = font.render("Grade selected: " + gradeSelected, True, teal)
-		screen.blit(gradeSelected_img, (175, 350))
+		screen.blit(gradeSelected_img, (175, 500))
 		# Different grade selections
 		if buttonK.draw_button():
 			print('K')
@@ -158,7 +164,7 @@ while run:
 	# SUBJECT SELECTOR MENU
 	elif subjectSelectorScreen:
 		subjectSelected_img = font.render("Subject selected: " + subjectSelected, True, teal)
-		screen.blit(subjectSelected_img, (150, 350))
+		screen.blit(subjectSelected_img, (150, 500))
 		# Different subject selections
 		if buttonMath.draw_button():
 			print('Math')
