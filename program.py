@@ -125,7 +125,7 @@ questionHand = QuestionHandler()
 
 #Load the image
 size=9000
-imageGH = pygame.image.load("C:\Jada personal\Applied Programming\TriviaGame\TriviaGame\graphics\chalk.jpg") #image file path
+imageGH = pygame.image.load(".\graphics\chalk.jpg") #image file path
 newimageGH = pygame.transform.scale(imageGH,(size,size))
 
 # Game loop, replayed constantly until exited
